@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794016242673,
+      "tag": "0000_empty_sentinel",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794095645228,
+      "tag": "0001_painel_admin_e_pedidos",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794097034939,
+      "tag": "0002_papel_usuario_painel",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794157926888,
+      "tag": "0003_categorias_e_unidades",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794188197048,
+      "tag": "0004_dois_fatores_opcional",
+      "breakpoints": true
+    }
+  ]
+}

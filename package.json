@@ -1,0 +1,21 @@
+{
+  "name": "ecommerce-perfumaria",
+  "private": true,
+  "packageManager": "pnpm@12.10.1",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @perfumaria/site dev",
+    "dev:admin": "pnpm --filter @perfumaria/admin dev",
+    "build": "pnpm -r --workspace-concurrency=1 build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "pnpm --filter @perfumaria/db db:generate",
+    "db:migrate": "pnpm --filter @perfumaria/db db:migrate",
+    "db:seed": "pnpm --filter @perfumaria/db db:seed",
+    "db:studio": "pnpm --filter @perfumaria/db studio",
+    "neon:setup": "pnpm --filter @perfumaria/db neon:setup",
+    "admin:usuario": "pnpm --filter @perfumaria/admin usuario"
+  }
+}

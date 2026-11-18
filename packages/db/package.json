@@ -1,0 +1,34 @@
+{
+  "name": "@perfumaria/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./schema": "./src/schema.ts",
+    "./catalog-seed": "./src/catalog-seed.ts",
+    "./orders": "./src/orders.ts",
+    "./payments": "./src/payments.ts",
+    "./units": "./src/units.ts",
+    "./line-photos": "./src/line-photos.ts"
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "tsx scripts/seed.ts",
+    "studio": "tsx scripts/admin.ts",
+    "neon:setup": "tsx scripts/neon-setup.ts",
+    "lint": "true",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.4"
+  },
+  "devDependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "@types/node": "^20",
+    "dotenv": "^18.0.9",
+    "drizzle-kit": "^0.31.11",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

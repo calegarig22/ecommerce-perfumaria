@@ -1,0 +1,1 @@
+ALTER TABLE "admin_user" ADD COLUMN "require_two_factor" boolean DEFAULT true NOT NULL;
